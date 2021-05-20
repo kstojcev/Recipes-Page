@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="meal-wrapper">
+        <div class="meal-search">
+          <h2 class="title">Find Meals For Your Ingredients</h2>
+
+          <div class="meal-search-box">
+            <input
+              type="text"
+              class="search-control"
+              placeholder="Enter an ingredient "
+              id="search-input"
+            />
+            <button type="submit" class="search-btn btn" id="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="meal-result">
+          <h2 id="search-result-title" class="title">Search Results:</h2>
+          <div id="meal"></div>
+        </div>
+
+        <div class="meal-details">
+          <!-- Recipe Close Button -->
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+
+          <!-- Meal Content -->
+          <div class="meal-details-content"></div>
+        </div>
+      </div>
+      <footer>&copy; Kristijan Stojcev 2021</footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
